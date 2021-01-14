@@ -26,6 +26,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/platina/proprietary/etc/firmware/tfa98xx_aac.cnt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/tfa98xx_aac.cnt \
     vendor/xiaomi/platina/proprietary/etc/firmware/tfa98xx_goer.cnt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/tfa98xx_goer.cnt \
     vendor/xiaomi/platina/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
+    vendor/xiaomi/platina/proprietary/etc/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
+    vendor/xiaomi/platina/proprietary/etc/permissions/miuicamera-privapp-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/miuicamera-privapp-permissions.xml \
+    vendor/xiaomi/platina/proprietary/lib/libCameraEffectJNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libCameraEffectJNI.so \
+    vendor/xiaomi/platina/proprietary/lib/libmorpho_memory_allocator.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmorpho_memory_allocator.so \
+    vendor/xiaomi/platina/proprietary/lib/libmorpho_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmorpho_panorama.so \
+    vendor/xiaomi/platina/proprietary/lib/libmorpho_panorama_gp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmorpho_panorama_gp.so \
+    vendor/xiaomi/platina/proprietary/lib64/libCameraEffectJNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libCameraEffectJNI.so \
+    vendor/xiaomi/platina/proprietary/lib64/libmorpho_memory_allocator.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmorpho_memory_allocator.so \
+    vendor/xiaomi/platina/proprietary/lib64/libmorpho_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmorpho_panorama.so \
+    vendor/xiaomi/platina/proprietary/lib64/libmorpho_panorama_gp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmorpho_panorama_gp.so \
+    vendor/xiaomi/platina/proprietary/etc/device_features/clover.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/clover.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/jasmine.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/jasmine.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/platina.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/platina.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/wayne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/wayne.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/whyred.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/whyred.xml \
     vendor/xiaomi/platina/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/platina/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
     vendor/xiaomi/platina/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
@@ -2464,4 +2479,5 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     vendor.qti.hardware.soter-V1.0-java \
-    chargeonlymode
+    chargeonlymode \
+    MiuiCamera
