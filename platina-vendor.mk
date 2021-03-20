@@ -1119,9 +1119,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/platina/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/xiaomi/platina/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/xiaomi/platina/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
-    vendor/xiaomi/platina/proprietary/vendor/radio/qcril_database/upgrade/8_version_mi.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_mi.sql
-
-
+    vendor/xiaomi/platina/proprietary/vendor/radio/qcril_database/upgrade/8_version_mi.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_mi.sql \
+    vendor/xiaomi/platina/proprietary/etc/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
+    vendor/xiaomi/platina/proprietary/etc/permissions/miuicamera-privapp-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/miuicamera-privapp-permissions.xml \
+    vendor/xiaomi/platina/proprietary/lib/libCameraEffectJNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libCameraEffectJNI.so \
+    vendor/xiaomi/platina/proprietary/lib/libmorpho_memory_allocator.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmorpho_memory_allocator.so \
+    vendor/xiaomi/platina/proprietary/lib/libmorpho_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmorpho_panorama.so \
+    vendor/xiaomi/platina/proprietary/lib/libmorpho_panorama_gp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmorpho_panorama_gp.so \
+    vendor/xiaomi/platina/proprietary/lib64/libCameraEffectJNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libCameraEffectJNI.so \
+    vendor/xiaomi/platina/proprietary/lib64/libmorpho_memory_allocator.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmorpho_memory_allocator.so \
+    vendor/xiaomi/platina/proprietary/lib64/libmorpho_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmorpho_panorama.so \
+    vendor/xiaomi/platina/proprietary/lib64/libmorpho_panorama_gp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmorpho_panorama_gp.so \
+    vendor/xiaomi/platina/proprietary/etc/device_features/clover.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/clover.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/jasmine.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/jasmine.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/platina.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/platina.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/wayne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/wayne.xml \
+    vendor/xiaomi/platina/proprietary/etc/device_features/whyred.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/whyred.xml
 PRODUCT_PACKAGES += \
     libthermalclient \
     FingerprintExtensionService \
@@ -1140,8 +1153,9 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    vendor.qti.gnss@3.0-service
-
+    vendor.qti.gnss@3.0-service \
+    chargeonlymode \
+    MiuiCamera
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/platina/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \

@@ -215,3 +215,13 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "MiuiCamera",
+	owner: "xiaomi",
+	apk: "proprietary/priv-app/MiuiCamera/MiuiCamera.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
