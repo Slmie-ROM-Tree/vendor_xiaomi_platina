@@ -217,6 +217,7 @@ prebuilt_etc_xml {
 
 android_app_import {
 	name: "MiuiCamera",
+        overrides: ["Snap", "Camera2"],
 	owner: "xiaomi",
 	apk: "proprietary/priv-app/MiuiCamera/MiuiCamera.apk",
 	certificate: "platform",
